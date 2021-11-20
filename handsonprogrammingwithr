@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+
+<html>
+
 <head>
 
 <meta charset="utf-8" />
@@ -9,8 +13,7 @@
 <meta name="author" content="Marina Bonatti" />
 
 
-<title>Meus Projetos</title>
- 
+<title>Hands-On Programming With R</title>
 
 <script src="data:application/javascript;base64,Ly8gUGFuZG9jIDIuOSBhZGRzIGF0dHJpYnV0ZXMgb24gYm90aCBoZWFkZXIgYW5kIGRpdi4gV2UgcmVtb3ZlIHRoZSBmb3JtZXIgKHRvCi8vIGJlIGNvbXBhdGlibGUgd2l0aCB0aGUgYmVoYXZpb3Igb2YgUGFuZG9jIDwgMi44KS4KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKGUpIHsKICB2YXIgaHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJkaXYuc2VjdGlvbltjbGFzcyo9J2xldmVsJ10gPiA6Zmlyc3QtY2hpbGQiKTsKICB2YXIgaSwgaCwgYTsKICBmb3IgKGkgPSAwOyBpIDwgaHMubGVuZ3RoOyBpKyspIHsKICAgIGggPSBoc1tpXTsKICAgIGlmICghL15oWzEtNl0kL2kudGVzdChoLnRhZ05hbWUpKSBjb250aW51ZTsgIC8vIGl0IHNob3VsZCBiZSBhIGhlYWRlciBoMS1oNgogICAgYSA9IGguYXR0cmlidXRlczsKICAgIHdoaWxlIChhLmxlbmd0aCA+IDApIGgucmVtb3ZlQXR0cmlidXRlKGFbMF0ubmFtZSk7CiAgfQp9KTsK"></script>
 
@@ -28,26 +31,37 @@
 
 <body>
 
+
+
+
 <section class="page-header">
-<h1 class="title toc-ignore project-name">Hands-On Programming With R - Garrett Grolemund</h1>
- <h4 class="author project-author">Marina Bonatti </h4>
+<h1 class="title toc-ignore project-name">Hands-On Programming With R</h1>
+<h4 class="author project-author">Marina Bonatti</h4>
 </section>
 
 
-<section class="main-content">
-<p><strong>Apresentação:</strong></p>
 
- <p> Por indicação do professor Rafael de Freitas Souza, do MBA em Data Science e Analytics da USP, comecei a ler o livro "Hands-On Programming With R", de Garrett Grolemund.
- A proposta do livro é introduzir o leitor à linguagem R e, para tanto, ele propõe uma série de exercícios ao longo da leitura e, também, três projetos principais. <p/>
- 
- <p> Compartilho links abaixo com a minha realização de cada um deles: <p/>
- 
- 
- <a> href="/Projetos/Projeto-1---Dados-Viciados.html" <Dados Viciados> <a/>
- 
- <a> href="/Projetos/Baralho-de-Cartas.html" <Baralho de Cartas> <a/>
- 
- 
- 
- 
- <p> <i> Até o momento, 2/3 projetos realizados </i> </p>
+<section class="main-content">
+<p><strong>Apresentação</strong> <br /></p>
+<p>Por indicação do professor Rafael de Freitas Souza, do MBA em Data Science e Analytics da USP, comecei a ler o livro “Hands-On Programming With R”, de Garrett Grolemund. A proposta do livro é introduzir o leitor à linguagem R e, para tanto, ele propõe uma série de exercícios ao longo da leitura e, também, três projetos principais.<br /> <br /></p>
+<p>Compartilho links abaixo com a minha realização de cada um desses projetos:<br /></p>
+<p><br /> <br /> <br /> <em>Até o momento, 2/3 projetos realizados.</em></p>
+</section>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
