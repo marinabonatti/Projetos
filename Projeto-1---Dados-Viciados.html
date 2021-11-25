@@ -175,8 +175,8 @@ a.sourceLine {
 <pre><code>## [1] 3 1 5</code></pre>
 <p><br /></p>
 <p>Temos assim uma função pronta que, ao ser utilizada, simula três dados aleatórios e independentes sendo jogados. <br /></p>
-<p>Com isso, já cumprimos os passos 1 e 2. <br /> <br /> <br /> <br /></p>
-<p>Vamos agora <strong>alterar as probabilidades dos dados</strong>, acrescentando o argumento <em>prob</em> em sample. <br /> <br /> Além disso, queremos olhar agora apenas para um dado - pois posteriormente faremos um histograma para analisarmos a distribuição de cada um dos dados - justo x viciado. <br /> <br /></p>
+<p>Com isso, já cumprimos os passos 1 e 2. <br /> <br /> <br /> </p>
+<p>Vamos agora <strong>alterar as probabilidades dos dados</strong>, acrescentando o argumento <em>prob</em> em sample. <br /> <br /> Para essa nova etapa, queremos olhar apenas para um dado - pois posteriormente faremos um histograma para analisarmos a distribuição de cada um dos tipos de dados - justo x viciado. <br /> <br /></p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>jogardadoviciado <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  dadosviciados <span class="ot">&lt;-</span> <span class="fu">sample</span>(dado, <span class="at">size =</span> <span class="dv">1</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">prob =</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">8</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">8</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">8</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">8</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">8</span>, <span class="dv">3</span><span class="sc">/</span><span class="dv">8</span>))</span>
@@ -186,8 +186,11 @@ a.sourceLine {
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  dadosjustos <span class="ot">&lt;-</span> <span class="fu">sample</span>(dado, <span class="at">size =</span><span class="dv">1</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p><br /></p>
-<p>Perfeito, com isso concluimos o passo 3, agora só falta compararmos os histogramas de cada um, após jogarmos cada dado <strong>sessenta mil vezes</strong>! <br /> <br /></p>
-<p>Para isso, usaremos a função <strong>replicate</strong>: <br /></p>
+  
+ <p> Ao acionarmos cada uma das funções, dificilmente perceberemos a diferença. E é justamente por isso que iremos criar histogramas com a distribuição de cada um deles, após serem jogados <strong>sessenta mil vezes</strong>! <p/>
+   <p> Desse modo, conseguiremos perceber com clareza o efeito da alteração de probabilidade que fizemos na função 'jogardadoviciado'. <p/>
+ <br /> <br /></p>
+<p>Para jogarmos os dados repetidas vezes, utilizaremos o <strong>replicate</strong>: <br /></p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sessentamilvezesviciado <span class="ot">&lt;-</span> <span class="fu">replicate</span>(<span class="dv">60000</span>, <span class="fu">jogardadoviciado</span>())</span></code></pre></div>
 <p><br /></p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sessentamilvezesjusto <span class="ot">&lt;-</span> <span class="fu">replicate</span>(<span class="dv">60000</span>, <span class="fu">jogardadojusto</span>())</span></code></pre></div>
