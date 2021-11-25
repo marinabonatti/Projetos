@@ -152,9 +152,9 @@ a.sourceLine {
   <strong> Vamos lá! </strong> 
 
 <p><br /></p>
-<p>Para criarmos um dado, precisamos primeiro criar um objeto com a sequência de números possíveis! <br /></p>
+<p>Para criarmos um dado, precisamos primeiro criar um objeto com a sequência dos números possíveis! <br /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dado <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span></code></pre></div>
-<p><br /> Em seguida, queremos simular uma pessoa jogando três dados. Para tanto, usaremos a função ‘sample’, com o argumento ‘<strong>replace</strong> = TRUE’ para que as jogadas sejam não apenas aleatórias, mas também <strong>independentes</strong>. <br /></p>
+<p><br /> Em seguida, queremos simular uma pessoa jogando dados. Para tanto, usaremos a função ‘sample’, com o argumento ‘<strong>replace</strong> = TRUE’ para que as jogadas sejam não apenas aleatórias, mas também <strong>independentes</strong>. Nesse exemplo, consideraremos que três dados serão jogados. <br /></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(dado, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 2 6 5</code></pre>
 <p><br /></p>
