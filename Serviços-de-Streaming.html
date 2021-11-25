@@ -301,7 +301,7 @@ a.sourceLine {
 <span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a>descritivasgeral<span class="sc">$</span>streaming <span class="ot">&lt;-</span> streamingfinal</span></code></pre></div>
 <p><br /> Explicando brevemente esse código: <br /></p>
-<p><em>Criei uma variável streaming que continha duas vezes a palavra “Serviço”. Em seguida, adicionei essa variável em cada um dos dataframes de estatísticas descritivas que criamos acima.<br /> Em seguida, juntei as descritivas particulares em um dataframe apenas, chamado ‘descritivasgeral’. <br /> Por fim, alterei o conteúdo de streaming seguindo a ordem que haviamos utilizado para juntar cada banco de dados de estatísticas descritivas particulares (netflixdescritivas, huludescritivas,primedescritivas,disneydescritivas).</em> <br /> <br /><br /></p>
+<p><em>Criei uma variável streaming que continha duas vezes a palavra “Serviço”. Em seguida, adicionei essa variável em cada um dos dataframes de estatísticas descritivas que criamos acima.<br /> Em seguida, juntei as descritivas particulares em um dataframe apenas, chamado ‘descritivasgeral’. <br /> Por fim, alterei o conteúdo de streaming seguindo a ordem que havíamos utilizado para juntar cada banco de dados de estatísticas descritivas particulares (netflixdescritivas, huludescritivas,primedescritivas,disneydescritivas).</em> <br /> <br /><br /></p>
 <p>Maravilha! Temos um banco de dados com todas as estatísticas descritivas que pedimos: <br /> <br /></p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(descritivasgeral)</span></code></pre></div>
 <pre><code>## tibble [8 x 8] (S3: tbl_df/tbl/data.frame)
@@ -314,12 +314,12 @@ a.sourceLine {
 ##  $ min_Rotten   : num [1:8] 10 10 12 10 12 10 10 10
 ##  $ streaming    : chr [1:8] &quot;Netflix&quot; &quot;Netflix&quot; &quot;Hulu&quot; &quot;Hulu&quot; ...</code></pre>
 <p><br /> <br /></p>
-<p>Para finalizar, quero comparar cada descritiva em gráficos.<br /></p>
+<p>Para finalizar, quero comparar cada descritiva em gráficos.<br /> <br/></p>
 <p>Em primeiro lugar, quero que esses gráficos sejam organizados entre série e filme, então vou separá-los em dois dataframes diferentes: <br /> <br /></p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>descritivasseries <span class="ot">&lt;-</span> <span class="fu">filter</span>(descritivasgeral, Type <span class="sc">==</span> <span class="dv">1</span>)</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>descritivasfilmes <span class="ot">&lt;-</span> <span class="fu">filter</span>(descritivasgeral, Type <span class="sc">==</span> <span class="dv">0</span>)</span></code></pre></div>
 <p><br /></p>
-<p><br /></p>
+
 <p>Comecemos pela comparação das médias de avaliações obtidas pelas séries e filmes de cada plataforma:</p>
 <p><br /></p>
 <p><strong>Com base nas notas IMDb</strong>: <br /> <br /></p>
