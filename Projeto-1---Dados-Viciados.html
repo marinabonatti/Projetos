@@ -154,13 +154,13 @@ a.sourceLine {
 <p><br /></p>
 <p>Para criarmos um dado, precisamos primeiro criar um objeto com a sequência dos números possíveis! <br /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dado <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span></code></pre></div>
-<p><br /> Em seguida, queremos simular uma pessoa jogando dados. Para tanto, usaremos a função ‘sample’, com o argumento ‘<strong>replace</strong> = TRUE’ - para que as jogadas sejam não apenas aleatórias, mas também <strong>independentes</strong>. <br/> Nesse exemplo, consideraremos que três dados serão jogados - argumento 'size = 3'. <br /></p>
+<p><br /> Em seguida, queremos simular uma pessoa jogando dados. Para tanto, usaremos a função ‘sample’, com o argumento ‘<strong>replace</strong> = TRUE’ - para que as jogadas sejam não apenas aleatórias, mas também <strong>independentes</strong>. <br/> <br/> Nesse exemplo, consideraremos que três dados serão jogados, por isso o argumento 'size = 3'. <br /></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(dado, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 2 6 5</code></pre>
 <p><br /></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span> (dado, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 3 6 2</code></pre>
-<p><br /> Veja que tivemos duas amostras diferentes, jogamos três dados duas vezes.</p>
+<p><br /> Veja que tivemos duas amostras diferentes, ou seja, jogamos três dados duas vezes.</p>
 <p><br /> Vamos agora criar uma <strong>função</strong> que faça isso <em>automaticamente</em>: <br /></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>jogardados <span class="ot">&lt;-</span> <span class="cf">function</span>() { </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  tresdados <span class="ot">&lt;-</span> <span class="fu">sample</span>(dado, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
